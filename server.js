@@ -28,7 +28,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 //providing cross-origin source. making it to be accessible by my localhost
 app.use(cors({
-    origin:['prince-api.onrender.com','https://api.ipgeolocation.io/ipgeo?apiKey=04b2bf1d45c44641a843467a6ed78469'],
+    origin:['https://easy-police-locate.onrender.com','https://api.ipgeolocation.io/ipgeo?apiKey=04b2bf1d45c44641a843467a6ed78469'],
     credentials:true,            
     optionSuccessStatus:200,
     methods:['GET','POST','PUT']
