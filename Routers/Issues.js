@@ -14,9 +14,9 @@ router.route('/')
         Issues.incidence=incidenceName;
         Issues.details=incidenceDetails;
 
-        const result=Issues.save();
+        const result=await Issues.save();
     
-        console.log(Issues);
+        console.log(result);
         res.status(200).json({"message":"Report sent"})
 
 }catch(err){
